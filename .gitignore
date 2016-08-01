@@ -1,47 +1,31 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
 
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+var getTimeStamp;
+var startTime;
+var endTime;
+ 
+function getTimeStamp(startTime){
+  if(value = true){
+    alert(new Date());
+  }
+}
+ 
+ 
+//function getTimeStamp(){
+//  var now = new Date();
+//  return ((now.getMonth() + 1) + '/' + (now.getDate()) + '/' + (now.getFullYear() + " " + now.getHours() + ':' +
+//  ((now.getMinutes() < 10) ? ("0" + now.getMinutes()) : (now.getMinutes())) + ':' + ((now.getSeconds() < 10) ? ("0" + now.getSeconds()) : (now.getSeconds())));
+//}
+ 
+ 
+//function setTime(){
+//  docment.getElementById('field').value = getTimeStamp();
+//}
+ 
+ 
+//var start = new Date();
+//  alert("This might be working if you see this.");
+//  var end = new Date();
+ 
+//  var difference = end.getTime() - start.getTime();
+ 
+//  alert("It took " + difference + " to complete your task");
