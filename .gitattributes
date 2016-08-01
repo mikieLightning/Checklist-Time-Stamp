@@ -1,17 +1,59 @@
-# Auto detect text files and perform LF normalization
-* text=auto
-
-# Custom for Visual Studio
-*.cs     diff=csharp
-
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+ <body>
+    <h1>
+      <!-- This shows the heading of the entire checklist -->
+        Master on Call Checklist
+    </h1>
+ 
+    <ul class="checklist ng-pristine ng-untouched ng-valid ng-isolate-scope ui-sortable" ui-sortable="sortableOptions" ng-model="task">
+       
+        <li> <!-- This puts a bullet point in front of the title-->
+          <h2>           
+            <!-- This shows the heading of task done after hours -->
+            <a href="#"> <!-- This makes the title blue -->
+              Done after regular work hours</a>
+          </h2>
+        </li>
+       
+        <li> 
+          <h2>
+            <!-- This shows the heading of task done during regular hours -->
+            <a href="#">
+              Done during regular work hours
+            </a>
+          </h2>
+        </li>
+         
+        <li>
+          <h2>
+            <!-- This shows the heading of task that need to be constantly looked at -->
+            <a href="#">
+              Tasks that need to be constantly checked throughout the week
+            </a>
+          </h2>
+        </li>
+     
+        <input type="checkbox" onclick="startTime();" value="true">
+          <p style="float:left;"></p>
+            <!-- Heading to review cameras and adjest as needed -->
+          <a>
+            Review cameras and adjest as needed
+          </a>
+        <input type="checkbox" onclick="setTime();" value="false">
+     
+        <br>
+          <input type="checkbox">
+            <p style="float:left;"></p>
+              <!-- Heading to review change approvals -->
+            <a>
+              Review change approvals
+            </a>
+            <input type="checkbox">
+           
+        <br>
+          <input type="checkbox">
+            <p style="float:left;"></p>
+              <!-- Heading to review ServiceNow incident(s) -->
+            <a>
+              Review ServiceNow incident request tickets
+            </a>
+          <input type="checkbox">
